@@ -1,19 +1,15 @@
 .footer-container {
-    background-color: #242424;
-    padding: 4rem 0 2rem 0;
+    background-color: #3a3939;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-subscription {
     width: 100%;
     display: flex;
+    flex: 2;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 20px;
     padding: 24px;
     color: #fff;
 }
@@ -23,23 +19,24 @@
 }
 
 .footer-subscription-heading {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     font-size: 28px;
-}
-
-.footer-subscription-text {
-    margin-bottom: 24px;
-    font-size: 18px;
+    text-align: start;
 }
 
 .footer-input-area {
-    width: 60%;
+    width: 100%;
+}
+
+.footer-input-area-heading {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-label {
-    width: 100%;
     display: flex;
     font-size: 20px;
+    padding: 0 10px 16px 0;
 }
 
 .footer-input {
@@ -50,8 +47,21 @@
     outline: none;
     border: none;
     font-size: 18px;
-    margin-bottom: 16px;
-    border: 1px solid #fff;
+    margin: 0 20px 16px 0;
+}
+
+.footer-input:last-child {
+    margin: 0 0 16px 0;
+}
+
+.footer-input-massagebox {
+    display: flex;
+    width: calc(100% - 8px);
+    padding: 8px 0 8px 8px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-size: 18px;
 }
 
 .footer-input::placeholder {
@@ -62,13 +72,13 @@
 .footer-links {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 24px;
 }
 
-.footer-links-wrap {
-    display: flex;
-    flex-direction: column;
-}
 .social-logo {
     color: #fff;
     justify-self: start;
@@ -78,6 +88,7 @@
     font-size: 2rem;
     display: flex;
     align-self: center;
+    text-align: center;
 }
 
  /* Social Icons */
@@ -86,24 +97,18 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem 0 2rem;
-    width: 55px;
 }
 
 .social-icon-link {
     color: rgb(255, 255, 255);
     font-size: 24px;
-    padding-right: 1rem;
-}
-
-.puzzle-number {
-    font-size: 12px;
+    padding: 0 0.5rem;
 }
 
 .footer-links-item {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    width: 100px;
+    text-align: center;
 }
 
 .footer-links-item a {
@@ -123,12 +128,31 @@
         flex-direction: column;
     }
 
+    .footer-subscription {
+        margin: 0 0 24px 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .footer-input-area-heading {
+        flex-direction: column;
+    }
+
+    .footer-subscription-heading {
+        text-align: center;
+    }
+
     .footer-input-area {
         width: 80%;
     }
 
+    .footer-input-massagebox {
+        width: 100%;
+    }
+
     .footer-links {
-        padding-bottom: 60px;
+        margin: 0;
+        padding: 0 0 60px 0;
     }
 
     .footer-links-wrap {
