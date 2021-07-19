@@ -33,7 +33,7 @@ export default function Footer() {
               <label className='footer-label' htmlFor='message'> Massage: </label>
               <textarea
                 id='message'
-                rows='6'
+                rows='3'
                 name='message'
                 placeholder='Your Message'
                 className='footer-input-massagebox'

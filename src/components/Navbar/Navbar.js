@@ -61,6 +61,13 @@ export default function Navbar() {
                         >
                             <i className="fab fa-twitter"></i>
                         </Link>
+                        <Link className='nav-links youtube'
+                            to='/'
+                            aria-label='Youtube'
+                            onClick={closeMobileMenu}
+                        >
+                            <i className="fab fa-youtube"></i>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -82,7 +82,7 @@
 .social-logo {
     color: #fff;
     justify-self: start;
-    margin: 2rem 0 2rem;
+    margin: 1.5rem 0 1.5rem;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 0 2rem;
+    margin: 1.5rem 0 1.5rem;
 }
 
 .social-icon-link {
@@ -114,7 +114,7 @@
 .footer-links-item a {
     color: rgba(255, 255, 255, 0.514);
     text-decoration: none;
-    margin: 2rem 0 2rem;
+    margin: 1.5rem 0 1.5rem;
     font-size: 16px;
 }
 
