@@ -1,3 +1,75 @@
-h1 {
+h1, p {
     text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    overflow: hidden;
+}
+
+.landingpage {
+    background-color: rgb(217, 254, 255);
+    min-height: 200px;
+    transform: rotate(5deg);
+    overflow: hidden;
+    padding: 100px 100px 100px 100px;
+    margin: -100px -100px -100px -100px;
+    position: relative;
+}
+
+.landingpagenormal {
+    transform: rotate(-5deg);
+}
+
+.productspage {
+    position: relative;
+}
+
+.tickedspage {
+    position: relative;
+    z-index: 2;
+}
+
+.aboutuspage {
+    background-color: rgb(217, 254, 255);
+    min-height: 200px;
+    transform: rotate(-5deg);
+    overflow: hidden;
+    padding: 100px 100px 100px 100px;
+    margin: -100px -100px -100px -100px;
+    position: relative;
+}
+
+.aboutuspagenormal {
+    transform: rotate(5deg);
+}
+
+@media screen and (max-width: 960px) {
+    .page {
+        padding: 40px 20px 0 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: stretch;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page {
+        padding: 40px 20px 0 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: stretch;
+    }
 }
