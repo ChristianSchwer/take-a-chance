@@ -24,9 +24,9 @@ function App() {
           <h1>Products</h1>
           <p>Some other fancy words.</p>
           <div className=" cards">
-            <Productcard name="IPhone10" image="images/img-7.jpg" description="Handy" price="999,99€" available="10/1230" time="Verbleibende Zeit: 0 Tage 12:02:14" />
-            <Productcard name="Urlaubsreise" image="images/img-2.jpg" description="Urlaub in der Caribik" price="450€" available="600/600" time="Verlosung findet statt" />
-            <Productcard name="PS5" image="images/img-5.jpg" description="Spielekonsole" price="300€" available="0/499" time="Verbleibende Zeit: 4 Tage 23:12:55" />
+            <Productcard name="IPhone10" image="images/img-7.jpg" description="Handy" price="999,99€" available="10/1230" time="Verbleibende Zeit: 0 Tage 12:02:14" details="Some details about the product asdf asdf asdf.." />
+            <Productcard name="Urlaubsreise" image="images/img-2.jpg" description="Urlaub in der Caribik" price="450€" available="600/600" time="Verlosung findet statt" details="maybe we don't need that here?" />
+            <Productcard name="PS5" image="images/img-5.jpg" description="Spielekonsole" price="300€" available="0/499" time="Verbleibende Zeit: 4 Tage 23:12:55" details="Some other details about the Product." />
           </div>
         </div>
         <div className="tickedspage" id="tickedspage">
