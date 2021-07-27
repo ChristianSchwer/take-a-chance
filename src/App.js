@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Productcard from './components/Cards/ProductCard'
 import Ticketcard from './components/Cards/TicketCard';
@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <Switch> */}
       <div className="page">
         <div className="landingpage" id="home">
           <div className="landingpagenormal">
@@ -45,13 +44,20 @@ function App() {
           <div className="aboutuspagenormal">
             <h1>About us</h1>
             <p>Some short words About us.</p>
-            <img className="aboutus-img" alt="aboutus" src="images/img-home.jpg"></img>
-            <img className="aboutus-img" alt="aboutus" src="images/img-4.jpg"></img>
+            <div className="aboutuscolumns">
+              <div>
+                <img className="aboutus-img" alt="aboutus" src="images/img-home.jpg"></img>
+                <p>I'm Sebastian.</p>
+              </div>
+              <div>
+                <img className="aboutus-img" alt="aboutus" src="images/img-4.jpg"></img>
+                <p>I'm Christian.</p>
+              </div>
+            </div>
             <p>Maybe more words?</p>
           </div>
         </div>
       </div>
-      {/* </Switch> */}
       <Footer />
     </Router>
   );

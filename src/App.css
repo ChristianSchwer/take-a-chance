@@ -46,10 +46,18 @@ h1, p {
 
 .aboutuspagenormal {
     transform: rotate(5deg);
+    display: flex;
+    flex-flow: column;
+}
+
+.aboutuscolumns {
+    display: flex;
+    justify-content: center;
 }
 
 .aboutus-img {
     max-height: 100px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 960px) {
