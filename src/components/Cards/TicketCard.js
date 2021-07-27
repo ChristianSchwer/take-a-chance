@@ -1,11 +1,12 @@
 import React from 'react';
-import './Card.css';
+import './TicketCard.css';
 
-export default function Card({ name, image, description, price, available, time }) {
+export default function TicketCard({ name, image, description, price, available, time }) {
     console.log(name)
     return (
         <div className="card">
             <figure className='card-head' data-category={name}>
+                <button className="card-button-buy"><i className="fas fa-shopping-cart"></i></button>
                 <img className="card-img" alt={name} src={image}></img>
             </figure>
             <div className="card-body">
