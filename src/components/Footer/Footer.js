@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as Smoothlink } from 'react-scroll';
 import './Footer.css';
 
 export default function Footer() {
@@ -44,9 +45,9 @@ export default function Footer() {
       </section>
       <section className='footer-links'>
         <div className='footer-logo'>
-          <Link to='/' className='social-logo'>
+          <Smoothlink activeClass="active" to='home' spy={true} smooth={true} duration={500} className='social-logo'>
             LOGO <i className='fab fa-typo3' />
-          </Link>
+          </Smoothlink>
         </div>
         <div className='social-icons'>
           <Link className='social-icon-link instagram'

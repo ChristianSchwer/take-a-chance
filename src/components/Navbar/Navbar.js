@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+import { Link as Smoothlink } from 'react-scroll';
 
 export default function Navbar() {
     const [click, setClick] = useState(false);
@@ -10,32 +12,32 @@ export default function Navbar() {
     return (
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                <Smoothlink activeClass="active" to='home' spy={true} smooth={true} duration={500} className='navbar-logo' onClick={closeMobileMenu}>
                     LOGO <i className='fab fa-typo3' />
-                </Link>
+                </Smoothlink>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Smoothlink activeClass="active" to='home' spy={true} smooth={true} duration={500} className='nav-links' onClick={closeMobileMenu}>
                             Home
-                        </Link>
+                        </Smoothlink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/Items' className='nav-links' onClick={closeMobileMenu}>
+                        <Smoothlink activeClass="active" to='productspage' spy={true} smooth={true} offset={-70} duration={500} className='nav-links' onClick={closeMobileMenu}>
                             Items
-                        </Link>
+                        </Smoothlink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/Tickets' className='nav-links' onClick={closeMobileMenu}>
+                        <Smoothlink activeClass="active" to='tickedspage' spy={true} smooth={true} offset={-70} duration={500} className='nav-links' onClick={closeMobileMenu}>
                             Tickets
-                        </Link>
+                        </Smoothlink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/AboutUs' className='nav-links' onClick={closeMobileMenu}>
+                        <Smoothlink activeClass="active" to='aboutuspage' spy={true} smooth={true} offset={120} duration={500} className='nav-links' onClick={closeMobileMenu}>
                             About us
-                        </Link>
+                        </Smoothlink>
                     </li>
                     <li className='nav-item'>
                         <Link className='nav-links instagram'

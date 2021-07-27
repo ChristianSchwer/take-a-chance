@@ -51,6 +51,10 @@
   .nav-item:last-child {
     margin-left: 280px;
   }
+
+  .nav-item > .active {
+    border-bottom: 3px solid black;
+  }
   
   .nav-links {
     color: rgb(0, 0, 0);
